@@ -1,0 +1,215 @@
+body {
+    background: fixed;
+    background-image: url('./bouquet-bunch-of-realistic-pink-and-blue-balloons-flying-illustration-for-card-baby-shower-gender-reveal-party-invitation-design-flyer-poster-decor-banner-web-advertising-vector.jpg');
+    background-size: cover;
+}
+
+#Box {
+    height: 550px;
+    width: 700px;
+    margin: auto;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 75%;
+    border-radius: 20px;
+    background-color: #2196F3;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#title h1 {
+    margin: inherit;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.flex-item {
+    display: block;
+    width: 50%;
+}
+
+.field-box {
+    display: flex;
+    height: 30px;
+}
+
+.name {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color: azure;
+}
+
+label {
+    align-self: center;
+}
+
+.gender-selection {
+    padding: 5px;
+    margin: 5px;
+}
+
+.radio-box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-box input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-box:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.radio-box input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-box input:checked~.checkmark:after {
+    display: block;
+}
+
+.radio-box .checkmark:after {
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background: white;
+}
+
+input[type=button] {
+    background-color: rgb(202, 235, 153);
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: pink;
+}
+
+.button-box {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+#prediction-box {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(139, 201, 255);
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#saved-results-box {
+    display: flex;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 143, 143);
+    background-color: rgb(253, 173, 247);
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#saved-result-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#saved-result-title * {
+    float: left;
+    display: block;
+}
+
+#saved-result-title button {
+    background-color: pink;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#saved-result-title button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+.error-box{
+    display: block;
+    background-color: rgb(250, 210, 217);
+    border:2px solid rgb(255, 56, 56);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.info-box{
+    display: block;
+    background-color: rgb(170, 250, 167);
+    border:2px solid rgb(56, 255, 73);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#result-gender{
+    font-size: 20px;
+    font-weight:bold;
+}
